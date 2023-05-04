@@ -82,6 +82,7 @@ In order to run this project you need:
 ### Setup
 
 Clone this repository to your desired folder:
+[you can find the Backend repo here](https://github.com/Gdiazdiaz/Hello-Backend)
 
   cd Hello-React-Rails
   git clone https://github.com/Gdiazdiaz/Hello-Frontend.git
