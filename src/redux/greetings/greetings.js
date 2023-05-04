@@ -10,14 +10,6 @@ const greetingReducer = (state = [], action) => {
   }
 };
 
-export const GetGreeting = () => async (dispatch) => {
-  const GetGreeting = await getData();
-  dispatch({
-    type: DISPLAY_GREETING,
-    GetGreeting,
-  });
-};
-
 const getData = async () => {
   try {
     const result = await fetch(URL);
@@ -26,6 +18,14 @@ const getData = async () => {
   } catch (error) {
     return error;
   }
+};
+
+export const GetGreeting = () => async (dispatch) => {
+  const GetGreeting = await getData();
+  dispatch({
+    type: DISPLAY_GREETING,
+    GetGreeting,
+  });
 };
 
 export default greetingReducer;
